@@ -1,0 +1,151 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+$colors: (
+  //"blue": $blue,
+  //"indigo": $indigo,
+  //"purple": $purple,
+  //"pink": $pink,
+  //"red": $red,
+  //"orange": $orange,
+  //"yellow": $yellow,
+  //"green": $green,
+  //"teal": $teal,
+  //"cyan": $cyan,
+  //"white": $white,
+  "gray": #25263B,
+  "gray-dark":#25263B,
+) !default;
+
+$enable-rounded: True;
+$enable-shadows: True;
+$enable-gradients: True;
+$enable-transitions: True;
+$enable-responsive-font-sizes: False;
+$enable-validation-icons: True;
+
+$bv-enable-table-stacked: True;
+$bv-enable-table-sticky: True;
+$bv-enable-tooltip-variants: True;
+$bv-enable-popover-variants: True;
+
+$primary-color: #000000bd;
+
+body {
+  //background-image: url("blue-background.jpg");
+  background-repeat: no-repeat;
+}
+.primary{
+  color: greenyellow;
+}
+.secondary {
+  color : #343a40;
+}
+h6 {
+  color: yellowgreen;
+  font-variant-caps: all-small-caps;
+}
+.carousel-caption {
+  position: absolute;
+  right: unset;
+  bottom: 240px;
+  left: unset;
+  z-index: 10;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 100px;
+  color: #fff;
+  text-align: left;
+  background-color: $primary-color;
+  border-bottom-right-radius: 200px;
+}
+.slide-hdr {
+  //background-color: #6f42c1;
+}
+.slide-sub-hdr {
+  //background-color: #6f42c1;
+  margin-bottom: 5px;
+}
+.quote {
+  font-size: small;
+  margin-bottom: 0px;
+}
+.section {
+  padding-top: 20px;
+}
+.first-section {
+  background-color: rgb(15, 1, 94);
+  background-image: radial-gradient(at 50% 100%, rgba(123, 22, 255, 0.75), rgb(15, 1, 94));
+  //background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  //background-image: url("blue-background.jpg");
+}
+.section-container {
+  border-top: 0px;
+  border-bottom: 10px solid #000;
+  margin-bottom: 20px;
+}
+.section-hdr {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.section-sub-hdr {
+  padding: 0px !important;
+  margin: 10px 0px !important;
+}
+.highlight-box {
+  background-color: #00000070;
+  max-width: 300px;
+  min-height: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
+  border-top: 1px solid greenyellow;
+  box-shadow: 0px -4px #00000060;
+}
+.highlight-inner {
+
+}
+.highlight-image {
+  width: 100%;
+  max-height: 110px;
+}
+.highlight-caption {
+  color: #fff;
+  padding-top: 30px;
+}
+.ad-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-top: 1px solid greenyellow;
+  box-shadow: 0px -4px #00000060;
+}
