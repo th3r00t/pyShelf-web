@@ -7,7 +7,7 @@
       </div>
       <div class="section-container">
         <b-container fluid="lg">
-          <b-row align-v="top" align-h="center" cols="4">
+          <b-row align-v="top" align-h="center" cols-lg="4" cols-md="2" cols-sm="1">
             <b-col>
               <div class="highlight-box">
                 <div class="highlight-inner">
@@ -100,21 +100,25 @@
       </div>
     </div>
     <div class="section second-section">
-      <div class="section-container">
+      <div class="section-container" id="download">
         <b-container>
-          <b-row align-v="top" align-h="center" cols="2">
+          <b-row align-v="top" align-h="center" cols-md="2" cols-sm="1">
             <b-col>
               <b-container class="ad-box">
+                <a href="https://github.com/th3r00t/pyShelf">
                 <h3 class="sh1">get started</h3>
                 <p>pyShelf is hosted on GitHub</p>
-                <img src="@/assets/GitHub-Mark-64px.png" /><img src="@/assets/GitHub_Logo.png" width="220px"/><br />
+                <img src="@/assets/GitHub-Mark-64px.png" /><img src="@/assets/GitHub_Logo.png" width="220px"/>
+                </a>
               </b-container>
             </b-col>
             <b-col>
               <b-container class="ad-box">
+                <a href="https://discord.gg/H9TbNJS">
                 <h3 class="sh1">get involved</h3>
                 <p>join us on discord</p>
-                <img src="@/assets/discord_logo_color.png" width="220px" /><br />
+                <img src="@/assets/discord_logo_color.png" width="220px" />
+                </a>
               </b-container>
             </b-col>
           </b-row>
@@ -134,7 +138,7 @@
                 <b-table-simple hover small caption-top responsive>
                   <caption>SLOC generated using David A. Wheeler's 'SLOCCount'</caption>
                   <colgroup><col><col><col></colgroup>
-                  <b-thead head-variant="dark">
+                  <b-thead head-variant="light">
                     <b-tr>
                       <b-th>SLOC</b-th><b-th>Directory</b-th><b-th>by-lang</b-th>
                     </b-tr>
@@ -161,22 +165,27 @@
                   </b-tbody>
                 </b-table-simple>
               </b-col>
-              <b-col class="ad-box-right">
+            </b-row>
+            <b-row>
+              <b-col>
                 <b-container>
                   <b-row>
                     <b-col>
-                      <img src="@/assets/githubsponsors.png" width="220px" />
+                      <iframe src="https://github.com/sponsors/th3r00t/button" title="Sponsor th3r00t" height="35" width="116" style="border: 0;"></iframe>
+                    </b-col>
+                    <b-col>
+                      <a href="https://www.patreon.com/bePatron?u=42571126" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
+                    </b-col>
+                    <b-col>
+                      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick" />
+                        <input type="hidden" name="hosted_button_id" value="3SH4A3XATY8VW" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                      </form>
                     </b-col>
                   </b-row>
                   <b-row>
-                    <b-col>
-                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                       <input type="hidden" name="cmd" value="_s-xclick" />
-                       <input type="hidden" name="hosted_button_id" value="3SH4A3XATY8VW" />
-                       <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                       <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                     </form>
-                   </b-col>
                   </b-row>
                 </b-container>
               </b-col>
@@ -184,12 +193,8 @@
           </b-container>
         </div>
       </div>
-      </div>
-      <div>
-      </div>
-      <div>
-      </div>
     </div>
+  </div>
 </template>
 
 <script>

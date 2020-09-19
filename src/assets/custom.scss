@@ -57,7 +57,9 @@ h6 {
 }
 body {
   //background-image: url("blue-background.jpg");
+  background-image: radial-gradient(circle, #202020, #151515, #000000);
   background-repeat: no-repeat;
+  background-color: #151515;
 }
 .primary{
   color: greenyellow;
@@ -140,7 +142,7 @@ body {
   padding-top: 30px;
 }
 .ad-box {
-  background-color: #f2f8fe;
+  background-color: #f2f8fe14;
   padding: 20px;
   //border-radius: 10px;
   margin-bottom: 20px;
@@ -148,7 +150,25 @@ body {
   box-shadow: 0px -4px #00000060;
   text-align: left;
   font-size: small;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  min-height: 187px;
+  color: aliceblue;
 }
 .ad-box-right {
   text-align: end;
+}
+td {
+  color: aliceblue;
+}
+/*GitHub Sponsor Override */
+.Box {
+  background-color: #fff0;
+  border: 1px solid #d1d5da00;
+  padding: 0px !important;
+  border-radius: 6px;
+  margin: 0px !important;
+  font-size: small;
+  color: white;
+  font-family: 'Kufam';
 }

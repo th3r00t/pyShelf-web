@@ -5,7 +5,7 @@
         fade
         id="carousel-fade"
         :interval="8000"
-        style="text-shadow: 0px 0px 2px #000"
+        style="text-shadow: 0 0 2px #000"
         img-width="100%"
         img-height="480px"
       >
@@ -36,7 +36,11 @@
               <div id="site-title" class="text-left">
                 <h3 class="primary site-title">pyShelf</h3>
               </div>
-              <div class="pl-1 justify-text-top"><h6 class="font-weight-light site-slogan">Open Source EBook Server</h6></div>
+              <div class="pl-1 justify-text-top">
+                <h6 class="font-weight-light site-slogan">
+                  Open Source EBook Server
+                </h6>
+              </div>
             </div>
           </div>
           <div id="nav" class="pr-1 align-items-center mt-auto mb-auto">
@@ -47,17 +51,12 @@
                     <b-icon icon="house-door" aria-hidden="true"></b-icon> Home
                   </b-button>
                 </router-link>
-                <router-link to="/download">
+                <a href="#download">
                   <b-button size="sm" class="site-nav">
-                    <b-icon icon="download" aria-hidden="true"></b-icon> Download
+                    <b-icon icon="download" aria-hidden="true"></b-icon>
+                    Download
                   </b-button>
-                </router-link>
-                <b-button size="sm" class="site-nav">
-                  <!--<router-link to="/download">-->
-                  <b-icon icon="hdd-rack" aria-hidden="true"></b-icon> Get
-                  Involved
-                  <!--</router-link>-->
-                </b-button>
+                </a>
               </b-button-group>
             </div>
           </div>
@@ -65,8 +64,7 @@
       </b-carousel>
     </div>
     <router-view />
-    <div class="footer-container">
-    </div>
+    <div class="footer-container"></div>
   </div>
 </template>
 
@@ -83,7 +81,7 @@
   background-color: #0000008c;
   border-bottom: 10px solid #00000070;
   border-top: 10px solid #00000070;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 #top-bar {
   //background-image: url("assets/blue-background.jpg");
@@ -91,12 +89,12 @@
   color: silver;
   //opacity: 90%;
   position: fixed;
-  top: 0px;
+  top: 0;
   min-width: 100%;
   z-index: 1;
 }
 #nav {
-  padding: 0px;
+  padding: 0;
 
   a {
     font-weight: bold;
